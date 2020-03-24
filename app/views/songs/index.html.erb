@@ -1,0 +1,5 @@
+<% @songs.each do |song| %>
+    <%= link_to song.title, song_path(song)%><br>
+    <%= link_to "same song", "/songs/#{song.id}"%><br>
+    <br>
+<% end %>

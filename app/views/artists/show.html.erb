@@ -1,0 +1,3 @@
+<%= @artist.name %>
+<%= link_to "All #{@artist.name}'s songs", artist_songs_path(@artist) %> <br>
+<%= link_to "a specific song", artist_song_path(@artist, Song.first) %>
